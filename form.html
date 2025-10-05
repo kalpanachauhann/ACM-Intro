@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2 align="center">✨ Student Registration Form ✨</h2>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend><b>Personal Information</b></legend>
+            <label for="fname">Full Name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="example@gmail.com" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="number" id="phone" name="phone" placeholder="10-digit number"><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Other Details</b></legend>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label><br><br>
+
+            <label>Hobbies:</label><br>
+            <input type="checkbox" id="music" name="hobby" value="Music">
+            <label for="music">Music</label><br>
+            <input type="checkbox" id="sports" name="hobby" value="Sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" id="reading" name="hobby" value="Reading">
+            <label for="reading">Reading</label><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Academic Details</b></legend>
+            <label for="course">Select Course:</label><br>
+            <select id="course" name="course">
+                <option value="">--Select--</option>
+                <option value="bsc">B.Sc. (Hons.) Computer Science</option>
+                <option value="bba">BBA</option>
+                <option value="bcom">B.Com (Hons.)</option>
+            </select><br><br>
+            <label for="college">College Name:</label><br>
+            <input list="colleges" id="college" name="college" placeholder="Type to see suggestions">
+            <datalist id="colleges">
+                <option value="Shaheed Sukhdev College of Business Studies">
+                <option value="Hindu College">
+                <option value="Miranda House">
+                <option value="Hansraj College">
+            </datalist><br><br>
+            <label for="marks">12th Percentage:</label><br>
+            <input type="number" id="marks" name="marks" placeholder="e.g. 89"><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Documents</b></legend>
+            <label for="photo">Upload Photograph:</label><br>
+            <input type="file" id="photo" name="photo"><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Feedback / Comments</b></legend>
+            <textarea name="comments" rows="4" cols="40" placeholder="Write something about yourself..."></textarea>
+        </fieldset>
+        <br>
+        <div align="center">
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Reset Form">
+        </div>
+    </form>
+</body>
+</html>
